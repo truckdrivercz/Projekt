@@ -13,8 +13,18 @@
     padding: 10px 10px 10px 10px;
 }
 
-#start:hover{
+#stop{
     background: red;
+    padding: 10px 10px 10px 10px;
+}
+
+#start:hover{
+    background: cyan;
+}
+
+#stop:hover{
+    background: black;
+    color: white;
 }
 
 #stone0{

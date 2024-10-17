@@ -4,10 +4,12 @@ const thirdStone = document.getElementById("stone2");
 const fourthStone = document.getElementById("stone3");
 const fifthStone = document.getElementById("stone4");
 const start = document.getElementById("start");
+const stopBtn = document.getElementById("stop");
+let stopStones;
 let Random;
 
 start.onclick = () => {
-    setInterval(() => {
+    stopStones = setInterval(() => {
         for (let i = 0; i < 5; i++)
         {
             Random = Math.random();
@@ -20,4 +22,8 @@ start.onclick = () => {
             }, timeValue);
         }
     }, 2000);
+}
+
+stopBtn.onclick = () => {
+    clearInterval(stopStones);
 }
