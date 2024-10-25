@@ -27,6 +27,15 @@
     color: white;
 }
 
+#reset {
+    background: orange;
+    padding: 10px 10px 10px 10px;
+}
+
+#reset:hover {
+    background: yellow;
+}
+
 #stone0{
     position: absolute;
     transition: 3s;
