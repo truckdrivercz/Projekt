@@ -14,10 +14,10 @@ start.onclick = () => {
         {
             Random = Math.random();
             let stone = document.getElementById("stone"+i);
-            let timeValue = Random*1000;
+            let timeValue = Random*2000;
             setTimeout(() => {
                 Random = Math.random();
-                let leftValue = Random*1000;
+                let leftValue = Random*2000;
                 stone.style.left = leftValue+"px";
             }, timeValue);
         }
